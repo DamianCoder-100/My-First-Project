@@ -1,0 +1,280 @@
+/* *{
+    outline: 1px solid red;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(148, 38%, 91%);
+
+}
+
+.wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.popup {
+    position: relative;
+    top: 80px;
+    background-color: hsl(187, 24%, 22%);
+    color: hsl(0, 0%, 100%);
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.popup p {
+    margin-top: 0px;
+}
+
+h4 .check-icon {
+    margin-bottom: 0;
+}
+
+.flex-message {
+    display: flex;
+    gap: 10px;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.input-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+.input {
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+
+}
+
+
+.query-label {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.box {
+    border: 1px solid hsl(186, 15%, 59%);
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.box.error-border{
+    border: 2px solid red;
+
+}
+
+.box:has(input[type="radio"]:checked) {
+    border: 1px solid hsl(169, 82%, 27%);
+    background-color: hsl(148, 38%, 91%);
+    color: hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+.check-box label {
+    cursor: pointer;
+}
+
+
+input[type="radio"] {
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    accent-color: hsl(169, 82%, 27%);
+    transform: scale(1.5);
+}
+
+input[type="text"] {
+    padding-left: 10px;
+    border: 1px solid hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+
+input:hover[type="text"] {
+    border: 1px solid hsl(169, 82%, 27%);
+
+}
+
+.message-label {
+    margin-bottom: 20px;
+}
+
+textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(186, 15%, 59%);
+
+}
+
+span {
+    color: hsl(169, 82%, 27%);
+}
+
+.check-box {
+    display: flex;
+    gap: 20px;
+    width: 290px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: hsl(169, 82%, 27%);
+}
+
+button {
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: hsl(169, 82%, 27%);
+    color: aliceblue;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.error{
+    visibility: hidden;
+    color: red;
+}
+
+
+.error.active {
+    visibility: visible;
+    color: red;
+    margin-top: 2px;
+}
+
+
+
+input.error-border,
+textarea.error-border {
+    border: 2px solid red;
+
+}
+
+
+@media (min-width: 1440px) {
+
+    .wrapper {
+        max-width: 900px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .popup {
+        width: 400px;
+    }
+
+    form {
+        width: 800px;
+        margin: 0 auto;
+        height: 1039px;
+    }
+
+    .input-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .input {
+        width: 389px;
+        margin-bottom: 20px;
+
+    }
+
+    .email-input {
+        width: 798px;
+    }
+
+
+    .radio-label {
+        width: 400px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+
+    .check-box {
+        width: 400px;
+    }
+
+    button {
+        width: 800px;
+    }
+
+    .messageError {
+        margin-top: 20px;
+    }
+
+    .topicError {
+        margin-top: -20px;
+    }
+
+    .consentError {
+        margin-top: -10px;
+    }
+
+
+}
